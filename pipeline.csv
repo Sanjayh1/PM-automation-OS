@@ -1,0 +1,32 @@
+# Filled example: user interview synthesis (row 5)
+
+**What it does:** Turns raw interview notes into roadmap-ready summaries without you babysitting the run. Use this filled example as the pattern for any "process a stack of messy files into a clean output" task.
+
+**Where to run it:** Claude Code, terminal, in the folder with your notes.
+
+---
+
+```
+/goal
+
+I have 14 raw interview notes in interviews/. Roadmap review is Friday.
+
+DONE WHEN: every note has a 2-line summary, a theme tag, and one verbatim
+quote I can paste into the roadmap review. Un-processable notes are logged
+with the reason. Duplicates are flagged and closed against the note they
+duplicate.
+
+VERIFY: print a completion table with one row per note ID, its status
+(Processed / Blocked / Duplicate), and its theme tag.
+
+OUTPUT: write the summaries, tags, and quotes to goal-interviews.md, then
+print the completion table to the terminal.
+```
+
+## Why this passes the stranger test
+
+Anyone can look at the printed completion table and see, per note ID, whether it's Processed, Blocked, or Duplicate. no need to read the underlying interview to check the work.
+
+## What to customize
+
+Swap the file count and folder name for your own. Keep the three deliverables (summary, theme tag, quote) specific. a synthesis output that's just "processed" with no artifact isn't verifiable.
